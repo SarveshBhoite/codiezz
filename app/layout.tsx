@@ -27,7 +27,7 @@ const siteConfig = {
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://codiezz.com",
   ogImage:
     "https://res.cloudinary.com/dpu1q7m4e/image/upload/v1755672221/OG_28_ymepir.png",
-  logo: "/codiezz_footer_capsule.svg", // ✅ Updated
+  logo: "/logobg.png", // ✅ Updated
   links: {
     twitter: "https://twitter.com/codiezz",
     github: "https://github.com/codiezz",
@@ -69,7 +69,7 @@ export const metadata: Metadata = {
     ],
   },
   icons: {
-    icon: [{ url: "/favicon.ico" }],
+    icon: [{ url: "/logobg.png" }],
     apple: [{ url: "/apple-touch-icon.png" }],
   },
   manifest: "/site.webmanifest",
