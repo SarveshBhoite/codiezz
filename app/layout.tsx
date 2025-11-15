@@ -6,7 +6,6 @@ import Header from "../components/header";
 import Footer from "../components/Footer";
 import { Providers } from "./providers";
 import { SkipToContent } from "../components/skip-to-content";
-import { BackgroundDecoration } from "../components/background-decoration";
 
 // Font configuration
 const inter = Inter({
