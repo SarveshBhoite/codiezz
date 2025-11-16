@@ -19,7 +19,7 @@ export default function Hero() {
             <Link
               href="#cal"
               className="relative overflow-hidden flex items-center gap-1 py-1 px-2 rounded-full shine-effect bg-[#F3F4F6] hover:bg-[#E5E7EB] transition-colors duration-300"
-              aria-label="8 founders booked a call this week"
+              aria-label="Book a call this week"
             >
               {/* Spinning Icon */}
               <svg
@@ -37,7 +37,7 @@ export default function Hero() {
               </svg>
 
               <span className="text-xs sm:text-sm font-medium text-[#272727]">
-                8 founders booked a call this week
+                Book a call this week
               </span>
             
               {/* Arrow Icon */}
