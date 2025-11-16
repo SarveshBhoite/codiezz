@@ -73,10 +73,10 @@ export default function Footer() {
             />
 
             {/* Social links */}
-            <nav className="flex items-center w-full md:pt-[56px] pt-8 pb-12 justify-between">
-              <Link className="footer-link" href="https://linkedin.com" target="_blank">LinkedIn</Link>
-              <Link className="footer-link" href="https://instagram.com" target="_blank">Instagram</Link>
-              <Link className="footer-link" href="https://x.com" target="_blank">Twitter</Link>
+            <nav className="flex items-center w-full md:pt-[56px] pt-8 pb-12 justify-between text-[#9f9f9f]">
+              <Link className="footer-link" href="https://www.linkedin.com/in/codiezz-community-68aba9385?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</Link>
+              <Link className="footer-link" href="https://www.instagram.com/official.codiezz" target="_blank">Instagram</Link>
+              <Link className="footer-link" href="https://x.com/codiezz_22?t=8L3mjH52jruCLDHg18ORBg&s=09" target="_blank">Twitter</Link>
             </nav>
 
             <p className="font-suisseMono md:text-base text-12 text-center uppercase text-[#9f9f9f]">
