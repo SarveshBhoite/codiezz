@@ -1,55 +1,54 @@
 // components/FAQ.tsx
-'use client';
+"use client";
 
-import React, { useState } from 'react';
-import Image from 'next/image';
-import clsx from 'clsx';
+import React, { useState } from "react";
+import Image from "next/image";
+import clsx from "clsx";
 
 const faqItems = [
   {
     id: 1,
     question: "What does Codiezz specialize in?",
     answer:
-      "We build high-quality websites and web applications using Next.js, MERN stack, and modern UI/UX. Our services include portfolio websites, business sites, landing pages, custom client projects, and full-stack development."
+      "We build high-quality websites and web applications using Next.js, MERN stack, and modern UI/UX. Our services include portfolio websites, business sites, landing pages, custom client projects, and full-stack development.",
   },
   {
     id: 2,
     question: "How long does it take to build a website with Codiezz?",
     answer:
-      "Simple websites (portfolio/landing pages) take 3–7 days. Full business websites or ecommerce platforms take 1–3 weeks depending on the features, integrations, and revisions."
+      "Simple websites (portfolio/landing pages) take 3–7 days. Full business websites or ecommerce platforms take 1–3 weeks depending on the features, integrations, and revisions.",
   },
   {
     id: 3,
     question: "What do you need from me to get started?",
     answer:
-      "We just need your basic requirements, content (if available), and design references. If you don’t have content or design, we will create everything for you — from branding to UI/UX to final development."
+      "We just need your basic requirements, content (if available), and design references. If you don’t have content or design, we will create everything for you — from branding to UI/UX to final development.",
   },
   {
     id: 4,
     question: "Do you provide monthly maintenance or support?",
     answer:
-      "Yes. Codiezz offers optional monthly support plans that include updates, bug fixes, improvements, new pages, and ongoing development support."
+      "Yes. Codiezz offers optional monthly support plans that include updates, bug fixes, improvements, new pages, and ongoing development support.",
   },
   {
     id: 5,
     question: "Can you build custom features for my business?",
     answer:
-      "Absolutely. Whether it's user login, dashboards, admin panels, payment gateways, carts, booking systems, or custom workflows — we develop everything from scratch according to your business needs."
+      "Absolutely. Whether it's user login, dashboards, admin panels, payment gateways, carts, booking systems, or custom workflows — we develop everything from scratch according to your business needs.",
   },
   {
     id: 6,
     question: "What is your pricing structure?",
     answer:
-      "Pricing depends on the project type. Landing pages start at affordable rates, while full-stack websites and ecommerce platforms vary based on complexity and integrations. After understanding your requirements, we share a clear quotation with no hidden charges."
+      "Pricing depends on the project type. Landing pages start at affordable rates, while full-stack websites and ecommerce platforms vary based on complexity and integrations. After understanding your requirements, we share a clear quotation with no hidden charges.",
   },
   {
     id: 7,
     question: "How will we communicate during the project?",
     answer:
-      "We stay connected through WhatsApp, Zoom/Google Meet calls, and regular project updates. You will get continuous progress reports and can request changes anytime during the project."
-  }
+      "We stay connected through WhatsApp, Zoom/Google Meet calls, and regular project updates. You will get continuous progress reports and can request changes anytime during the project.",
+  },
 ];
-
 
 // Accordion Toggle Icon
 const AccordionIcon = ({ isOpen }: { isOpen: boolean }) => (
@@ -77,10 +76,7 @@ const AccordionIcon = ({ isOpen }: { isOpen: boolean }) => (
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className={clsx(
-        isOpen && "opacity-0",
-        "transition-opacity duration-300"
-      )}
+      className={clsx(isOpen && "opacity-0", "transition-opacity duration-300")}
     />
   </svg>
 );
@@ -93,7 +89,12 @@ export default function FAQ() {
   };
 
   return (
-    <section id="faq" className="relative" role="region" aria-label="Frequently Asked Questions">
+    <section
+      id="faq"
+      className="relative"
+      role="region"
+      aria-label="Frequently Asked Questions"
+    >
       <div className="h-[64px] w-full border-y border-light-gray hidden md:block"></div>
 
       {/* Section Title */}
@@ -105,7 +106,8 @@ export default function FAQ() {
           <h2 className="section-title font-suisse lg:text-[60px] text-[32px] leading-[42px] font-medium text-dark-gray">
             <span>Questions?</span>
           </h2>
-          <h2 className="section-title font-suisse lg:text-[60px] text-[32px] leading-[42px] mt-20px font-medium text-dark-gray-50">
+          <h2
+            className=" section-title font-suisse lg:text-[60px] text-[32px] lg:leading-[52px] leading-[38px] mt-1 lg:mt-4 font-medium text-dark-gray-50 " >
             <span>Answers.</span>
           </h2>
         </div>
@@ -132,7 +134,7 @@ export default function FAQ() {
                   <div className="flex justify-between items-center gap-4 md:py-7 py-4 pl-4 pr-6">
                     <div className="flex md:gap-6 gap-4 items-center min-w-0 flex-1">
                       <p className="font-suisseMono font-normal md:text-xl text-xs text-[#8F8F8F] whitespace-nowrap flex-shrink-0">
-                        / {String(item.id).padStart(2, '0')}
+                        / {String(item.id).padStart(2, "0")}
                       </p>
                       <p className="font-suisse font-normal md:text-xl lg:text-2xl text-base leading-[1.3] text-dark-gray">
                         {item.question}

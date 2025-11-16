@@ -96,9 +96,11 @@ export default function ProjectShowcase() {
             <h2 className="section-title font-suisse lg:text-[60px] text-[32px] leading-[42px] font-medium text-dark-gray">
               <span>Projects</span>
             </h2>
-            <h2 className="section-title font-suisse lg:text-[60px] text-[32px] leading-[52px] mt-20px font-medium text-dark-gray-50">
-              <span>Showcase</span>
-            </h2>
+            <h2
+  className="section-title font-suisse lg:text-[60px] text-[32px] lg:leading-[52px] leading-[38px] mt-1 lg:mt-4 font-medium text-dark-gray-50 ">
+  <span>Showcase</span>
+</h2>
+
           </div>
         </div>
       </div>
